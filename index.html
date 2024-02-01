@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="assets/cart.png" type="image/x-icon"/>
+    <title>Seroya Mart | E-Groceries Store</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js" defer></script>
+
+    <!--untuk icon icon lain-->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <header id="header">
+      <nav class="navbar">
+        <div class="brand">
+          <img src = "assets/logo.png" alt="logo website">
+        </div>
+        <div class="hamburger" id="hamburger">
+          <i width="42" data-feather="menu"></i>
+        </div>
+        <ul class="navigations">
+          <li>
+            <a href="#hero-content" class="__transition"
+              ><i width="16" data-feather="home"></i>Home</a
+            >
+          </li>
+          <li>
+            <a href="#package-content" class="__transition"
+              ><i width="16" data-feather="archive"></i>Our Package</a
+            >
+          </li>
+          <li>
+            <a href="#closing-argument" class="__transition"
+              ><i width="16" data-feather="phone"></i>Call Us</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="hero-content">
+      <div class="wrapper">
+        <article class="headline">
+          <h1>Seroya Mart</h1>
+          <h2>Top Rated E-Groceries Store Based in Indonesia</h2>
+          <p>Every Day with best Ingredients</p>
+        </article>
+        <article class="slider">
+          <div class="slider-wrapper">
+            <div class="slider-images-carousel">
+              <div class="slides">
+                <img
+                  src="assets/vegetables.jpg"
+                  class="slide"
+                  alt="product example"
+                />
+                <img
+                  src="assets/groceries.jpeg"
+                  class="slide"
+                  alt="product example"
+                />
+                <img
+                  src="assets/anotherone.jpg"
+                  class="slide"
+                  alt="product example"
+                />
+                <img
+                  src="assets/2.jpg"
+                  class="slide"
+                  alt="product example"
+                />
+                <img
+                  src="assets/ituu.jpg"
+                  class="slide"
+                  alt="product example"
+                />
+                <img
+                  src="assets/123.jpeg"
+                  class="slide"
+                  alt="product example"
+                />
+              </div>
+              <div class="controls">
+                <div class="control prev-slide">
+                  <i width="42" data-feather="arrow-left"></i>
+                </div>
+                <div class="control next-slide">
+                  <i width="42" data-feather="arrow-right"></i>
+                </div>
+              </div>
+            </div>
+            <div class="review">
+              <div class="review-message">
+                <p>"Always Fresh Stock Everyday at Seroya Mart, Top Quality E-Groceries Store"</p>
+              </div>
+              <div class="reviewer">
+                <div class="img-profile">
+                  <img
+                    src="assets/emma.jpg"
+                    alt="customer"
+                  />
+                </div>
+                <div class="profile">
+                  <h3>Emma Watson</h3>
+                  <p><strong>Single Mom<strong>(24)</p>
+                </div>
+              </div>
+            </div>
+            <div class="offer-information">
+              <h3>
+                Nikmati sejumlah keunggulan dengan memilih jasa yang kami sediakan:
+              </h3>
+              <div class="offer-list">
+                <div class="offer">
+                  <div class="icon-wrapper">
+                    <i width="42" data-feather="credit-card"></i>
+                  </div>
+                  <p>Pembayaran dan Delivery Aman</p>
+                </div>
+                <div class="offer">
+                  <div class="icon-wrapper">
+                    <i width="42" data-feather="dollar-sign"></i>
+                  </div>
+                  <p>Gratis ongkos kirim</p>
+                </div>
+                <div class="offer">
+                  <div class="icon-wrapper">
+                    <i width="42" data-feather="shopping-cart"></i>
+                  </div>
+                  <p>Produk berkualitas dan segar setiap hari</p>
+                </div>
+                <div class="offer">
+                  <div class="icon-wrapper">
+                    <i width="42" data-feather="watch"></i>
+                  </div>
+                  <p>Efisiensi waktu ketika berbelanja</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="contact">
+          <div class="contact-wrapper">
+            <header>
+              <h3>Contact Us</h3>
+              <h6>
+                Sales akan menghubungi anda 1x24 jam setelah data kami terima
+              </h6>
+            </header>
+            <form action="" id="contact-form">
+              <label for="name" class="form-control">
+                <span>Your Name</span>
+                <input type="text" placeholder="First and last name" id="name" name="name" required/>
+                <small></small>
+              </label>
+              <label for="email" class="form-control">
+                <span>Email Address</span>
+                <input type="text" id="email" placeholder="example@gmail.com" name="email" required/>
+                <small></small>
+              </label>
+              <label for="interest">
+                <span>What are you interested in?</span>
+                <select id="interest" name="interest">
+                  <option value="" disabled selected>--select your option--</option>
+                  <option value="" selected>Shopping</option>
+                  <option value="">Delivery Tracking</option>
+                  <option value="">Customer Service</option>
+                </select>
+              </label>
+              <button type="submit">Send</button>
+            </form>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <article class="our-package">Our package</article>
+    <main id="package-content">
+      <div class="package-content-wrapper">
+        <article class="package-card">
+          <div class="icon">
+            <div class="icon-wrapper">
+              <i width="42" data-feather="shopping-cart"></i>
+            </div>
+          </div>
+          <div class="content">
+            <h3>Fresh Products</h3>
+            <p>Buah dan sayuran segar yang selalu dijaga kualitasnya</p>
+          </div>
+        </article>
+        <article class="package-card">
+          <div class="icon">
+            <div class="icon-wrapper">
+              <i width="42" data-feather="star"></i>
+            </div>
+          </div>
+          <div class="content">
+            <h3>Empowering Local Farmers</h3>
+            <p> Produk Seroya Mart berasal dari para petani lokal Indonesia yang terbaik </p>
+          </div>
+        </article>
+        <article class="package-card">
+          <div class="icon">
+            <div class="icon-wrapper">
+              <i width="42" data-feather="truck"></i>
+            </div>
+          </div>
+          <div class="content">
+            <h3>Safe Delivery</h3>
+            <p> Barang dikirim oleh kurir berpengalaman kami, yang siap menjaga kualitas pembelanjaan Anda </p>
+          </div>
+        </article>
+        <article class="package-card">
+          <div class="icon">
+            <div class="icon-wrapper">
+              <i width="42" data-feather="heart"></i>
+            </div>
+          </div>
+          <div class="content">
+            <h3>Kitchen Ingredient</h3>
+            <p>Bumbu dapur lengkap untuk keperluan memasak kamu</p>
+          </div>
+        </article>
+        <article class="package-card">
+          <div class="icon">
+            <div class="icon-wrapper">
+              <i width="42" data-feather="key"></i>
+            </div>
+          </div>
+          <div class="content">
+            <h3>Kitchen Set</h3>
+            <p>Segala jenis alat masak untuk memudahkanmu dalam memasak</p>
+          </div>
+        </article>
+        <article class="package-card">
+          <div class="icon">
+            <div class="icon-wrapper">
+              <i width="42" data-feather="tool"></i>
+            </div>
+          </div>
+          <div class="content">
+            <h3>Bunding Set</h3>
+            <p>
+              Bingung masak apa? sudah tersedia paket untuk kamu masak di dapur
+            </p>
+          </div>
+        </article>
+      </div>
+    </main>
+    <article class="closing-argument" id="closing-argument">
+      <div class="closing-argument-wrapper">
+        <h1> Elevate Your Tastes with Our Grocery Selection </h1>
+        <p>
+          Welcome to Seroya Mart, where we redefine the art of grocery shopping. 
+          Immerse yourself in a world of culinary excellence as we present a thoughtfully curated selection 
+          of the finest and freshest ingredients. From locally sourced produce to international delicacies, 
+          our shelves are stocked with a diverse array of premium products. Explore the realm of exceptional flavors, 
+          discover unique finds, and embark on a journey to elevate your culinary creations. 
+          At Seroya Mart, we are passionate about providing not just groceries but an experience 
+          that transcends the ordinary. Join us in elevating your tastes and making every meal a masterpiece.
+        </p>
+        <a href="#hero-content">
+          <button>Contact Us</button>
+        </a>
+      </div>
+    </article>
+
+    <footer id="footer">
+      <div class="footer-image">
+        <img src="./assets/logo.png" alt="logo" />
+      </div>
+
+      <div class="footer-text">
+        <p>Terms of Service | Privacy Policy</p>
+        <p>2024 Seroya Mart</p>
+      </div>
+    </footer>
+
+    <div class="float-navbar hide">
+      <ul class="navigations">
+        <li>
+          <a href="#hero-content" class="__transition"
+            ><i width="16" data-feather="home"></i>Home</a
+          >
+        </li>
+        <li>
+          <a href="#package-content" class="__transition"
+            ><i width="16" data-feather="box"></i>Our Package</a
+          >
+        </li>
+        <li>
+          <a href="#closing-argument" class="__transition"
+            ><i width="16" data-feather="phone-forwarded"></i>Call Us</a
+          >
+        </li>
+      </ul>
+
+      <div class="close-btn"><i data-feather="x" width="32"></i></div>
+    </div>
+
+    <div class="toaster hide">
+      Data sent successsfully <i data-feather="check" width="16"></i>
+    </div>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

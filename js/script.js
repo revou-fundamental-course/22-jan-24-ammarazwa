@@ -1,4 +1,4 @@
-// form-auth
+
 const form = document.getElementById("contact-form");
 const name = document.querySelector("#contact-form label input#name");
 const email = document.querySelector("#contact-form label input#email");
@@ -18,7 +18,7 @@ function showSucces(input) {
   small.innerText = "";
 }
 
-//check email is valid
+
 function checkEmail(input) {
   const re =
     /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -31,7 +31,6 @@ function checkEmail(input) {
   }
 }
 
-//checkRequired fields
 function checkRequired(inputArr) {
   let result = false;
   inputArr.forEach(function (input) {
@@ -46,7 +45,6 @@ function checkRequired(inputArr) {
   return result;
 }
 
-//check input Length
 function checkLength(input, min, max) {
   if (input.value.length < min) {
     showError(
@@ -66,7 +64,6 @@ function checkLength(input, min, max) {
   }
 }
 
-//get FieldName
 function getFieldName(input) {
   return input.id.charAt(0).toUpperCase() + input.id.slice(1);
 }
@@ -85,7 +82,6 @@ form.addEventListener("submit", function (e) {
   }
 });
 
-// Navbar
 const hamburger = document.querySelector("#hamburger");
 const floatNavCloseBtn = document.querySelector(".float-navbar .close-btn");
 const floatNav = document.querySelector(".float-navbar");
@@ -98,8 +94,7 @@ floatNavCloseBtn.addEventListener("click", () => {
   floatNav.classList.toggle("hide");
 });
 
-// SLider
-const delay = 3000; // in ms
+const delay = 3000; 
 const slides = document.querySelector(".slides");
 const slidesCount = slides.childElementCount;
 const maxLeft = (slidesCount - 1) * 100 * -1;
